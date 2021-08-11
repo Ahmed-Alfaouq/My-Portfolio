@@ -1,0 +1,26 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "It's my portfolio. Here you will find my projects and experience\r ![page image](/portfolio.png)\r Take a look now!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahmed-Alfaouq/My-Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ahmed-Alfaouq/My-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Ahmed-Alfaouq/My-Portfolio#readme",
+  "devDependencies": {
+    "hint": "^6.1.4",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.20.1"
+  }
+}
