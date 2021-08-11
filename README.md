@@ -1,6 +1,6 @@
 # My Portfolio
 It's my portfolio. Here you will find my projects and experience
-![page image](/portfolio.png)
+![page image](images/portfolio.png)
 Take a look now!
 
 # Build With
@@ -13,8 +13,9 @@ Take a look now!
  1) open command line
  2) write "git clone https://github.com/Ahmed-Alfaouq/My-Portfolio.git"
  3) Enjoy
+ 
  Or
- 1) Code tab
+ 1) Click on code tab
  2) Double click on index.html
  3) Enjoy
 # Dome
