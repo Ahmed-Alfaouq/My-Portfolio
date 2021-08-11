@@ -1,6 +1,6 @@
 # My Portfolio
 It's my portfolio. Here you will find my projects and experience
-![page image](/portfolio.png)
+![page image](images/portfolio.png)
 Take a look now!
 
 # Build With
