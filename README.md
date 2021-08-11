@@ -11,7 +11,7 @@ Take a look now!
  
 # Getting Started
  1) open command line
- 2) write "git clone https://github.com/Ahmed-Alfaouq/Hello-Microverse.git"
+ 2) write "git clone https://github.com/Ahmed-Alfaouq/My-Portfolio.git"
  3) Enjoy
  Or
  1) Code tab
