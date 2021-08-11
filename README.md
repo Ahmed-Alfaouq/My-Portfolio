@@ -1,1 +1,35 @@
-# My-Portfolio
+# My Portfolio
+It's my portfolio. Here you will find my projects and experience
+![page image](/portfolio.png)
+Take a look now!
+
+# Build With
+ - HTML
+ - CSS
+ - Webhint
+ - Stylelint
+ 
+# Getting Started
+ 1) open command line
+ 2) write "git clone https://github.com/Ahmed-Alfaouq/Hello-Microverse.git"
+ 3) Enjoy
+ Or
+ 1) Code tab
+ 2) Double click on index.html
+ 3) Enjoy
+# Dome
+  [Demo](https://www.example.com)  
+# Prerequisites
+# Setup
+# Usage
+# Run tests
+# Deployment
+# Authors
+ :bearded_person: **Author 1**
+  - Github: [@Ahmed-Alfarouq](https://github.com/Ahmed-Alfaouq)
+  - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ahmed-omar912ba9199/)
+  - Twitter: [@twitter](https://twitter.com/mediocre23534)
+
+# :handshake: Contributing
+Contributions, issues, and feature requests are welcome!
+Feel free to check the issues page.
