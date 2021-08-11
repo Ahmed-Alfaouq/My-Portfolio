@@ -13,6 +13,7 @@ Take a look now!
  1) open command line
  2) write "git clone https://github.com/Ahmed-Alfaouq/My-Portfolio.git"
  3) Enjoy
+ 
  Or
  1) Code tab
  2) Double click on index.html
