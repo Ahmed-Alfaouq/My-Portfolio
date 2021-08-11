@@ -15,7 +15,7 @@ Take a look now!
  3) Enjoy
  
  Or
- 1) Code tab
+ 1) Click on code tab
  2) Double click on index.html
  3) Enjoy
 # Dome
