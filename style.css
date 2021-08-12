@@ -5,6 +5,14 @@
   padding: 0;
 }
 
+.crete-font {
+  font-family: 'Crete Round', serif;
+}
+
+.inter-font {
+  font-family: 'Inter', sans-serif;
+}
+
 .image-container img {
   width: 100%;
   height: 100%;
@@ -106,7 +114,6 @@ section.headline h2 {
 }
 
 section.headline p {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -143,14 +150,14 @@ section.works {
 }
 
 section.works h2 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: normal;
   font-size: 40px;
   line-height: 52px;
-  text-align: center;
   color: #1c1a19;
   margin: 24px 0;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 section.works h2::after {
@@ -158,9 +165,9 @@ section.works h2::after {
   display: block;
   position: absolute;
   bottom: -16px;
-  left: 12px;
+  left: 0;
   border: 1px solid rgba(33, 33, 33, 1);
-  width: 295px;
+  width: 320px;
 }
 
 section.works .featured-project {
@@ -176,7 +183,6 @@ section.works .featured-project div.image-container {
 }
 
 section.works .featured-project h3 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: normal;
   font-size: 32px;
   line-height: 44px;
@@ -185,7 +191,6 @@ section.works .featured-project h3 {
 }
 
 section.works .featured-project p {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -194,7 +199,7 @@ section.works .featured-project p {
 }
 
 section.works .featured-project ul {
-  grid-template-columns: 55px 55px 85px 55px;
+  grid-template-columns: 60px 60px 95px 60px;
   justify-content: space-between;
   margin: 12px 0 22px;
 }
@@ -202,20 +207,18 @@ section.works .featured-project ul {
 section.works .featured-project ul li {
   text-align: center;
   border: 1px solid #8993a4;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
   color: #091e42;
   margin-right: 12px;
-  padding: 10px 3px;
+  padding: 10px 0;
 }
 
 section.works .featured-project a {
   padding: 12px;
   background: #ff6b00;
   border: 1px solid #ff6b00;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -247,7 +250,6 @@ section.works .cards .card {
 }
 
 section.works .cards .card h3 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: normal;
   font-size: 32px;
   line-height: 44px;
@@ -256,7 +258,6 @@ section.works .cards .card h3 {
 }
 
 section.works .cards .card p {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -265,14 +266,13 @@ section.works .cards .card p {
 }
 
 section.works .cards .card ul {
-  grid-template-columns: 60px 90px 60px;
+  grid-template-columns: 60px 100px 60px;
   text-align: center;
   margin: 0 12px;
 }
 
 section.works .cards .card ul li {
   background: rgba(255, 255, 255, 0.24);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -288,7 +288,6 @@ section.works .cards .card a {
   bottom: 0;
   background: #ff6b00;
   border: 1px solid #ff6b00;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
@@ -332,7 +331,6 @@ section.about .description::after {
 
 section.about .description h2 {
   color: rgba(255, 107, 0, 1);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 72px;
   font-weight: 400;
   line-height: 88px;
@@ -344,7 +342,6 @@ section.about .description h2 {
 }
 
 section.about .description p.descrip {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -356,7 +353,6 @@ section.about .description p.descrip {
 section.about .description a.resume {
   background: #ff6b00;
   border: 1px solid #ff6b00;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
@@ -381,7 +377,6 @@ section.about .skills {
 }
 
 section.about .skills h4 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -411,7 +406,6 @@ section.about .skills h4:nth-of-type(3)::before {
 }
 
 section.about .skills ul.items li {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 43px;
