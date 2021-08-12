@@ -136,12 +136,13 @@ section.headline .social-media .image-container:nth-child(5) {
 }
 
 /* Start Works */
-.works {
+section.works {
   margin-top: 55px;
   grid-template-columns: 320px;
+  justify-content: center;
 }
 
-.works h2 {
+section.works h2 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: normal;
   font-size: 40px;
@@ -152,7 +153,7 @@ section.headline .social-media .image-container:nth-child(5) {
   position: relative;
 }
 
-.works h2::after {
+section.works h2::after {
   content: "";
   display: block;
   position: absolute;
@@ -162,39 +163,39 @@ section.headline .social-media .image-container:nth-child(5) {
   width: 295px;
 }
 
-.works .featured-project {
+section.works .featured-project {
   margin-top: 45px;
 }
 
-.works .featured-project .image-container {
+section.works .featured-project div.image-container {
   margin: 10px auto 30px;
 }
 
-.works .featured-project h3 {
+section.works .featured-project h3 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: normal;
   font-size: 32px;
   line-height: 44px;
   color: #091e42;
-  margin: 12px 0px;
+  margin: 12px 0;
 }
 
-.works .featured-project p {
+section.works .featured-project p {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: #091e42;
-  margin: 12px 0px;
+  margin: 12px 0;
 }
 
-.works .featured-project ul {
+section.works .featured-project ul {
   grid-template-columns: 55px 55px 85px 55px;
   justify-content: space-between;
   margin: 12px 0 22px;
 }
 
-.works .featured-project ul li {
+section.works .featured-project ul li {
   padding: 10px 0;
   text-align: center;
   border: 1px solid #8993a4;
@@ -205,7 +206,7 @@ section.headline .social-media .image-container:nth-child(5) {
   color: #091e42;
 }
 
-.works .featured-project a {
+section.works .featured-project a {
   padding: 12px;
   background: #ff6b00;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -217,19 +218,19 @@ section.headline .social-media .image-container:nth-child(5) {
   color: #fff;
 }
 
-.works .cards {
+section.works .cards {
   grid-template-columns: 320px;
   margin: 30px 0;
 }
 
-.works .cards .card {
+section.works .cards .card {
   position: relative;
   height: 386px;
   margin: 20px 0;
   background: url(/images/card.png);
 }
 
-.works .cards .card h3 {
+section.works .cards .card h3 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: normal;
   font-size: 32px;
@@ -238,7 +239,7 @@ section.headline .social-media .image-container:nth-child(5) {
   margin: 80px 12px 12px;
 }
 
-.works .cards .card p {
+section.works .cards .card p {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: normal;
   font-size: 16px;
@@ -247,13 +248,13 @@ section.headline .social-media .image-container:nth-child(5) {
   margin: 12px;
 }
 
-.works .cards .card ul {
+section.works .cards .card ul {
   grid-template-columns: 60px 90px 60px;
   text-align: center;
   margin: 0 12px;
 }
 
-.works .cards .card li {
+section.works .cards .card ul li {
   background: rgba(255, 255, 255, 0.24);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 500;
@@ -263,12 +264,13 @@ section.headline .social-media .image-container:nth-child(5) {
   padding: 10px 12px;
   margin-right: 10px;
 }
-.works .cards .card a {
+
+section.works .cards .card a {
   position: absolute;
-  left: 0px;
+  left: 0;
   right: 0;
-  bottom: 0px;
-  background: #FF6B00;
+  bottom: 0;
+  background: #ff6b00;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
   font-size: 17px;
@@ -277,4 +279,112 @@ section.headline .social-media .image-container:nth-child(5) {
   letter-spacing: 0.03em;
   color: #fff;
   padding: 12px;
+}
+
+/* Start About */
+section.about {
+  background: rgba(28, 26, 25, 1);
+  padding-bottom: 10px;
+  margin-bottom: 120px;
+}
+
+section.about .description {
+  position: relative;
+  height: 650px;
+  background: url(/images/about.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+section.about .description::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 327px;
+  bottom: -20px;
+  border: 1px solid #fff;
+}
+
+section.about .description h2 {
+  color: rgba(255, 107, 0, 1);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: 0.3700000047683716px;
+  width: 327px;
+  text-align: left;
+  margin: auto;
+  padding: 140px 0 10px;
+}
+
+section.about .description p.descrip {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+  width: 327px;
+  margin: auto;
+}
+
+section.about .description a.resume {
+  background: #ff6b00;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  padding: 12px;
+  margin-left: 16px;
+  margin-top: 12px;
+  display: inline-block;
+}
+
+section.about .skills {
+  color: rgba(255, 255, 255, 1);
+  margin-top: 60px;
+  text-align: center;
+}
+
+section.about .skills h4 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0;
+  margin-top: 30px;
+}
+
+section.about .skills h4::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: red;
+  margin-left: -30px;
+}
+
+section.about .skills h4:nth-child(1)::before {
+  transform: rotate(45deg);
+  margin-right: 10px;
+}
+
+section.about .skills h4:nth-of-type(3)::before {
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+}
+
+section.about .skills ul.items li {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0;
+  text-align: center;
 }
