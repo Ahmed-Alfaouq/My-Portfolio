@@ -43,6 +43,9 @@ a {
   align-items: center;
 }
 
+.list li {
+  float: left;
+}
 /* Start Navbar */
 header {
   display: flex;
