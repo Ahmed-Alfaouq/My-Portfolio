@@ -43,6 +43,10 @@ a {
   align-items: center;
 }
 
+.sr-only {
+  display: hidden;
+}
+
 .list li {
   float: left;
 }
@@ -414,4 +418,58 @@ section.about .skills ul.items li {
   line-height: 43px;
   letter-spacing: 0;
   text-align: center;
+}
+
+/* Start Contact Form  */
+form.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form.contact-form h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: center;
+  color: rgba(23, 43, 77, 1);
+}
+
+form.contact-form div.form-control {
+  margin: 10px 0;
+}
+
+/* Start Social Media */
+section.social-media {
+  margin: 162px auto 0;
+  width: 60%;
+}
+
+section.social-media ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+section.social-media ul li i {
+  font-size: 20px;
+  color: rgba(80, 95, 121, 1);
+}
+
+section.social-media ul li i.fa-github {
+  background-color: rgba(80, 95, 121, 1);
+  color: white;
+  border-radius: 50%;
+}
+
+section.social-media::after {
+  content: "";
+  display: block;
+  background-color: #0d151e;
+  width: 134px;
+  height: 5px;
+  border-radius: 20px;
+  margin: 23px auto;
 }
