@@ -44,7 +44,7 @@ a {
 }
 
 .sr-only {
-  display: hidden;
+  display: none;
 }
 
 .list li {
@@ -430,7 +430,7 @@ form.contact-form {
   padding: 0 24px;
 }
 
-form.contact-form h2 {
+form.contact-form h2.inter-font {
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
@@ -503,7 +503,7 @@ section.social-media {
   width: 60%;
 }
 
-section.social-media ul {
+section.social-media ul.social-media-list {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
