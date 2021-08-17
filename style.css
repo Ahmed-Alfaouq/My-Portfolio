@@ -43,6 +43,14 @@ a {
   align-items: center;
 }
 
+.sr-only {
+  display: none;
+}
+
+.list li {
+  float: left;
+}
+
 /* Start Navbar */
 header {
   display: flex;
@@ -411,4 +419,113 @@ section.about .skills ul.items li {
   line-height: 43px;
   letter-spacing: 0;
   text-align: center;
+}
+
+/* Start Contact Form  */
+form.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+}
+
+form.contact-form h2.inter-font {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: center;
+  color: rgba(23, 43, 77, 1);
+  margin-bottom: 59px;
+}
+
+form.contact-form div.form-control {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.form-control textarea {
+  width: 100%;
+  background-color: #fbf8f7;
+  border: none;
+  outline: none;
+  padding: 12px;
+}
+
+.form-control textarea::placeholder {
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(60, 58, 57, 1);
+}
+
+.form-control input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  padding: 14px 16px;
+  width: 100%;
+}
+
+.form-control input::placeholder {
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(151, 148, 147, 1);
+}
+
+.submit_btn {
+  padding: 12px;
+  margin-top: 14px;
+  background: #ff6b00;
+  border: 1px solid #ff6b00;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.submit_btn:hover {
+  background: #fff;
+  color: #ff6b00;
+}
+
+.submit_btn:active {
+  color: white;
+  background-color: rgba(224, 83, 4, 1);
+}
+
+/* Start Social Media */
+section.social-media {
+  margin: 162px auto 0;
+  width: 60%;
+}
+
+section.social-media ul.social-media-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+section.social-media ul li i {
+  font-size: 20px;
+  color: rgba(80, 95, 121, 1);
+}
+
+section.social-media ul li i.fa-github {
+  background-color: rgba(80, 95, 121, 1);
+  color: white;
+  border-radius: 50%;
+}
+
+section.social-media::after {
+  content: "";
+  display: block;
+  background-color: #0d151e;
+  width: 134px;
+  height: 5px;
+  border-radius: 20px;
+  margin: 23px auto;
 }
