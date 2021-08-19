@@ -19,7 +19,6 @@ Take a look now!
  2) Double click on index.html
  3) Enjoy
 # Dome
-  [Demo](https://www.example.com)  
 # Prerequisites
 # Setup
 # Usage

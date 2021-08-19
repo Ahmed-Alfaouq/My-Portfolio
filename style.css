@@ -354,6 +354,16 @@ section.works .cards .card {
   background-size: cover;
 }
 
+section.works .cards .card:nth-child(2),
+section.works .cards .card:nth-child(5) {
+  background-image: url(./images/card3.png);
+}
+
+section.works .cards .card:nth-child(3),
+section.works .cards .card:nth-child(6) {
+  background-image: url(./images/card2.png);
+}
+
 section.works .cards .card h3 {
   font-weight: normal;
   font-size: 32px;
@@ -459,6 +469,10 @@ section.works .cards .card a:hover {
     grid-template-columns: 320px;
     justify-content: center;
     padding: 0 5px;
+  }
+
+  section.works .cards .card {
+    background: url(/images/card.png);
   }
 }
 
