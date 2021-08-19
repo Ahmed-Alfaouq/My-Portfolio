@@ -119,10 +119,10 @@ section.headline {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 192px 0 10px 143px;
+  padding: 192px 0 10px 90px;
   height: 870px;
   background-image: url(/images/bg-headline-bs.png);
-  background-position: 100% 295%;
+  background-position: 100% -50%;
   background-repeat: no-repeat;
 }
 
@@ -173,13 +173,12 @@ section.headline .social-media li a i.fa-github {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 991.99px) {
+@media screen and (max-width: 575.99px) {
   section.headline {
     padding: 120px 0 10px 24px;
     height: 590px;
     background-image: url(/images/bg-headline-ss.png);
     background-position: 102% 100%;
-    background-repeat: no-repeat;
   }
 
   section.headline h1 {
@@ -202,6 +201,29 @@ section.headline .social-media li a i.fa-github {
 
   section.headline p {
     max-width: 300px;
+  }
+
+  section.headline .social-media {
+    position: relative;
+    left: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+    transform: none;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991.99px) {
+  section.headline {
+    padding: 120px 0 10px 24px;
+    height: 590px;
+    background-image: url(/images/bg-headline-ss.png);
+    background-position: 102% 100%;
+  }
+
+  section.headline h1 {
+    width: auto;
   }
 
   section.headline .social-media {
@@ -328,6 +350,8 @@ section.works .cards .card {
   margin: 20px 0;
   width: 369px;
   background: url(/images/card.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section.works .cards .card h3 {
@@ -401,7 +425,6 @@ section.works .cards .card a:hover {
     display: block;
     position: absolute;
     bottom: -16px;
-    left: 0;
     width: 320px;
     margin: 0;
   }
@@ -409,7 +432,7 @@ section.works .cards .card a:hover {
   section.works .featured-project {
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: center;
   }
 
   section.works .featured-project div.image-container {
@@ -435,6 +458,7 @@ section.works .cards .card a:hover {
   section.works .cards {
     grid-template-columns: 320px;
     justify-content: center;
+    padding: 0 5px;
   }
 }
 
@@ -506,12 +530,14 @@ section.about .skills {
   text-align: center;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 section.about .skills div {
   display: flex;
   flex-direction: column;
   margin: 90px 0;
+  width: 228px;
 }
 
 section.about .skills h4 {
@@ -558,6 +584,7 @@ section.about .skills ul.items li {
     background: url(/images/about-ss.png);
     background-repeat: no-repeat;
     background-position: bottom right;
+    margin-left: 24px;
   }
 
   section.about .description::after {
@@ -566,12 +593,14 @@ section.about .skills ul.items li {
 
   section.about .description h2 {
     width: 327px;
-    margin: auto;
   }
 
   section.about .description p.descrip {
-    margin: auto;
     width: 327px;
+  }
+
+  section.about .skills div {
+    margin: 30px 0 20px 0;
   }
 }
 
@@ -662,11 +691,15 @@ section.form form.contact-form .form-control textarea::placeholder {
     width: 327px;
   }
 
-  section.form form {
+  section.form form.contact-form {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  section.form form.contact-form div.form-control {
+    width: 100%;
   }
 }
 
@@ -693,7 +726,7 @@ section.social-media ul.social-media-list li i.fa-github {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 991.99px) {
+@media screen and (max-width: 575.99px) {
   section.social-media::after {
     content: "";
     display: block;
