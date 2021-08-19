@@ -349,6 +349,10 @@ section.works .cards .card {
   height: 386px;
   margin: 20px 5px;
   width: 369px;
+}
+
+section.works .cards .card:nth-child(1),
+section.works .cards .card:nth-child(4) {
   background: url(/images/card.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -357,11 +361,15 @@ section.works .cards .card {
 section.works .cards .card:nth-child(2),
 section.works .cards .card:nth-child(5) {
   background-image: url(./images/card3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section.works .cards .card:nth-child(3),
 section.works .cards .card:nth-child(6) {
   background-image: url(./images/card2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section.works .cards .card h3 {
@@ -473,6 +481,12 @@ section.works .cards .card a:hover {
 
   section.works .cards .card {
     background: url(/images/card.png);
+  }
+}
+
+@media screen and (min-width: 1199.99px) {
+  section.works .cards .card {
+    width: 30%;
   }
 }
 
