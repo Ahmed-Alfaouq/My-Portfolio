@@ -347,7 +347,7 @@ section.works .cards .card {
   justify-content: center;
   position: relative;
   height: 386px;
-  margin: 20px 0;
+  margin: 20px 5px;
   width: 369px;
   background: url(/images/card.png);
   background-repeat: no-repeat;
