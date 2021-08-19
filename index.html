@@ -22,78 +22,80 @@
           <span></span>
         </nav>
         <div class="collapse-menu">
-          <ul>
+          <ul class="d-flex align-center inter-font">
             <li>Portfolio</li>
             <li>About</li>
             <li>Contact</li>
-            <li>Letter Icon</li>
+            <li><i class="far fa-envelope"></i></li>
           </ul>
         </div>
     </header>
   <!-- End Navbar -->
   <!-- Start Headline -->
     <section class="headline">
-      <h1>Hey There. I’m Ahmed</h1>
-      <h2>I’am a Software Developer</h2>
-      <p>
-        I can help you build a product, feature or <br>
-        website Look through some of my work <br>
-        and experience! If you like what you see <br>
-        and have a project you need coded, <br> 
+      <h1 class="crete-font">Hey There. I’m Ahmed</h1>
+      <h2 class="inter-font">I’am a Software Developer</h2>
+      <p class="inter-font">
+        I can help you build a product, feature or
+        website Look through some of my work
+        and experience! If you like what you see
+        and have a project you need coded,
         don’t hestiate to contact me.
       </p>
       <ul class="social-media">
-        <li class="image-container">
+        <li>
           <a href="/">
-            <img src="/images/github.png" alt="github">
+            <i class="fab fa-github"></i>
           </a>
         </li> 
-        <li class="image-container">
+        <li>
           <a href="/">
-            <img src="/images/linkedin.png" alt="linkedin">
+            <i class="fab fa-linkedin-in"></i>
           </a>
         </li>
-        <li class="image-container">
+        <li>
           <a href="/">
-            <img src="/images/Enabled.png" alt="angelist">
+            <i class="fab fa-angellist"></i>
           </a>
         </li>
-        <li class="image-container">
+        <li>
           <a href="/">
-            <img src="/images/twitter.png" alt="twitter">
+            <i class="fab fa-twitter"></i>
           </a>
         </li>
-        <li class="image-container">
+        <li>
           <a href="/">
-            <img src="/images/Disabled.png" alt="Disabled">
+            <i class="fab fa-medium-m"></i>
           </a>
         </li> 
       </ul>
     </section>
   <!-- End Headline -->
   <!-- Start Works -->
-  <section class="works d-grid">
+  <section class="works">
     <h2 class="crete-font">My Recent Works</h2>
     <div class="featured-project">
       <div class="image-container">
-        <img src="/images/works.png" alt="works">
+        <img src="works.jpg" alt="works">
       </div>
-      <h3 class="crete-font">Multi-Post Stories</h3>
-      <p class="inter-font">
-        A daily selection of privately personalized reads; 
-        no accounts or sign-ups required. has been the industry's 
-        standard dummy text ever since the 1500s, when an unknown 
-        printer took a standard dummy text.
-      </p>
-      <ul class="list inter-font">
-        <li>html</li>
-        <li>css</li>
-        <li>bootstrap</li>
-        <li>ruby</li>
-      </ul>
-      <a href="/" class="inter-font">
-        See Project
-      </a>
+      <div class="content">
+        <h3 class="crete-font">Multi-Post Stories</h3>
+        <p class="inter-font">
+          A daily selection of privately personalized reads; 
+          no accounts or sign-ups required. has been the industry's 
+          standard dummy text ever since the 1500s, when an unknown 
+          printer took a standard dummy text.
+        </p>
+        <ul class="list inter-font">
+          <li>html</li>
+          <li>css</li>
+          <li>bootstrap</li>
+          <li>ruby</li>
+        </ul>
+        <a href="/" class="inter-font">
+          See Project
+        </a>
+      </div>
     </div>
     <div class="cards d-grid">
       <div class="card">
@@ -210,16 +212,19 @@
       </a>
     </div>
     <div class="skills">
-      <h4 class="inter-font">Language</h4>
+      <div class="languages">
+        <h4 class="inter-font">Language</h4>
         <ul class="items inter-font">
           <li>Javascript</li>
           <li>Ruby</li>
           <li>Html</li>
           <li>Css</li>
         </ul>
-      <h4 class="inter-font">
-        Frameworks
-      </h4>
+      </div>
+      <div class="framworks">
+        <h4 class="inter-font">
+          Frameworks
+        </h4>
         <ul class="items inter-font">
           <li>Bootstrap</li>
           <li>Ruby On Rails</li>
@@ -227,9 +232,11 @@
           <li>CapyBara</li>
           <li>Selenium</li>
         </ul>
-      <h4 class="inter-font">
-        Skills
-      </h4>
+      </div>
+      <div class="skills">
+        <h4 class="inter-font">
+          Skills
+        </h4>
         <ul class="items inter-font">
           <li>Codekit</li>
           <li>Github</li>
@@ -238,28 +245,31 @@
           <li>Terminal</li>
         </ul>
       </div>
+    </div>
   </section>
   <!-- End About -->
   <!-- Start Conact Form -->
-  <form action="https://formspree.io/f/mgerpyar" method="post" class="contact-form">
-    <h2 class="inter-font">
+  <section class="form">
+    <h2 class="inter-font contact-title">
       I'm always interested in hearing about new projects, 
       so if you'd like to chat please get in touch.
     </h2>
-    <div class="form-control">
-      <label for="name" class="sr-only">Full Name</label>
-      <input type="text" name="name" id="name" maxlength="30" placeholder="Full Name" required>
-    </div>
-    <div class="form-control">
-      <label for="email" class="sr-only">email</label>
-      <input type="email" name="email" id="email" placeholder="Email Address" required>
-    </div>
-    <div class="form-control">
-      <label for="message" class="sr-only">message</label>
-      <textarea name="message" id="message" rows="5" placeholder="Enter Your Text Here" maxlength="500" required></textarea>
-    </div>
-    <input class="inter-font submit_btn pressed" type="submit" value="Get in touch">
-  </form>
+    <form action="https://formspree.io/f/mgerpyar" method="post" class="contact-form">
+      <div class="form-control">
+        <label for="name" class="sr-only">Full Name</label>
+        <input type="text" name="name" id="name" maxlength="30" placeholder="Full Name" pattern=".{1-30}" required>
+      </div>
+      <div class="form-control">
+        <label for="email" class="sr-only">email</label>
+        <input type="email" name="email" id="email" placeholder="Email Address" required>
+      </div>
+      <div class="form-control">
+        <label for="message" class="sr-only">message</label>
+        <textarea name="message" id="message" rows="5" placeholder="Enter Your Text Here" maxlength="500" required></textarea>
+      </div>
+      <input class="inter-font submit_btn pressed" type="submit" value="Get in touch">
+    </form>
+  </section>
   <!-- End Contact Form -->
   <!-- Start Social Media -->
   <section class="social-media">
