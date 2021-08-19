@@ -121,7 +121,7 @@ section.headline {
   justify-content: flex-start;
   padding: 192px 0 10px 90px;
   height: 870px;
-  background-image: url(/images/bg-headline-bs.png);
+  background-image: url(./images/bg-headline-bs.png);
   background-position: 100% -50%;
   background-repeat: no-repeat;
 }
@@ -177,7 +177,7 @@ section.headline .social-media li a i.fa-github {
   section.headline {
     padding: 120px 0 10px 24px;
     height: 590px;
-    background-image: url(/images/bg-headline-ss.png);
+    background-image: url(./images/bg-headline-ss.png);
     background-position: 102% 100%;
   }
 
@@ -218,7 +218,7 @@ section.headline .social-media li a i.fa-github {
   section.headline {
     padding: 120px 0 10px 24px;
     height: 590px;
-    background-image: url(/images/bg-headline-ss.png);
+    background-image: url(./images/bg-headline-ss.png);
     background-position: 102% 100%;
   }
 
@@ -353,7 +353,7 @@ section.works .cards .card {
 
 section.works .cards .card:nth-child(1),
 section.works .cards .card:nth-child(4) {
-  background: url(images/card.png);
+  background: url(./images/card.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
