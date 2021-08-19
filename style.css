@@ -372,7 +372,14 @@ section.works .cards .card {
   height: 386px;
   margin: 20px 5px;
   width: 369px;
+  transition: 1s;
 }
+
+section.works .cards .card:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0px 0px 7px 1px #8b0000bf;
+}
+
 
 section.works .cards .card:nth-child(1),
 section.works .cards .card:nth-child(4) {
