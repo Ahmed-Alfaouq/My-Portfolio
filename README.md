@@ -19,7 +19,7 @@ Take a look now!
  2) Double click on index.html
  3) Enjoy
 # Dome
-[Demo](https://ahmed-alfaouq.github.io/My-Portfolio/)
+[Live Demo](https://ahmed-alfaouq.github.io/My-Portfolio/)
 # Prerequisites
 # Setup
 # Usage
