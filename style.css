@@ -10,10 +10,6 @@ html {
   padding: 0;
 }
 
-.d-none {
-  display: none;
-}
-
 .crete-font {
   font-family: "Crete Round", serif;
 }
@@ -44,6 +40,10 @@ a {
   display: flex;
 }
 
+.d-none {
+  display: none;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -61,7 +61,7 @@ a {
 }
 
 /* Start Navbar */
-header {
+header#navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -70,10 +70,7 @@ header {
   padding: 10px 20px;
 }
 
-header a.logo {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-style: normal;
+header#navbar a.logo {
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
@@ -81,7 +78,7 @@ header a.logo {
   text-decoration: none;
 }
 
-header nav.menu-icons span {
+header#navbar nav#menu-icons span {
   display: none;
   width: 30px;
   border: 2px solid rgba(172, 183, 195, 1);
@@ -90,57 +87,91 @@ header nav.menu-icons span {
   cursor: pointer;
 }
 
-header div.collapse-menu {
+header#navbar div#collapse-menu {
   width: 300px;
 }
 
-header div.collapse-menu.open {
+header#navbar div#collapse-menu.open {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   margin-top: 20px;
 }
 
-header div.collapse-menu.open ul {
+header#navbar div#collapse-menu.open ul {
   flex-direction: column;
   height: 200px;
   justify-content: space-around;
 }
 
-header div.collapse-menu.open .close-icon {
-  color: white;
+header#navbar div#collapse-menu.open .close-icon {
+  color: #67798e;
   align-self: flex-end;
   font-size: 20px;
+  font-weight: 300;
+  margin-right: 20px;
   cursor: pointer;
 }
 
-header div.collapse-menu ul {
+header#navbar div#collapse-menu ul {
   color: #fff;
   justify-content: space-around;
   font-size: 15px;
 }
 
-header div.collapse-menu ul li {
+header#navbar div#collapse-menu ul li {
   cursor: pointer;
 }
 
 @media screen and (max-width: 991.99px) {
-  header a.logo {
+  header#navbar a.logo {
     font-size: 18px;
   }
 
-  header div.collapse-menu {
+  header#navbar div#collapse-menu {
     display: none;
   }
 
-  header nav.menu-icons span {
+  header#navbar div#collapse-menu.open {
+    margin-top: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 22;
+    background-color: #3c3a39;
+    padding: 30px 0 0 0;
+  }
+  
+  header#navbar div#collapse-menu.open ul {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  header#navbar div#collapse-menu ul li {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0;
+    border-bottom: 2px solid #6f6c6b;
+    text-align: center;
+    width: 90%;
+    margin-bottom: 40px;
+  }
+
+  header#navbar div#collapse-menu ul li:last-child {
+    display: none;
+  }
+
+  header#navbar nav#menu-icons span {
     display: block;
   }
 }
 
 /* Start Headline */
-section.headline {
+section#headline {
   position: relative;
   background-color: rgba(28, 26, 25, 1);
   display: flex;
@@ -153,7 +184,7 @@ section.headline {
   background-repeat: no-repeat;
 }
 
-section.headline h1 {
+section#headline h1 {
   font-weight: 400;
   font-size: 72px;
   line-height: 81px;
@@ -164,14 +195,14 @@ section.headline h1 {
   z-index: 2;
 }
 
-section.headline h2 {
+section#headline h2 {
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
   color: #fff5e1;
 }
 
-section.headline p {
+section#headline p {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -180,7 +211,7 @@ section.headline p {
   width: 466px;
 }
 
-section.headline .social-media {
+section#headline .social-media {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -191,13 +222,13 @@ section.headline .social-media {
   height: 200px;
 }
 
-section.headline .social-media li a i {
+section#headline .social-media li a i {
   color: #fff;
   font-size: 20px;
   animation: spin 1s ease-in-out 2s;
 }
 
-section.headline .social-media li a i.fa-github {
+section#headline .social-media li a i.fa-github {
   color: black;
   background-color: #fff;
   border-radius: 50%;
@@ -224,14 +255,14 @@ section.headline .social-media li a i.fa-github {
 }
 
 @media screen and (max-width: 575.99px) {
-  section.headline {
+  section#headline {
     padding: 120px 0 10px 24px;
     height: 590px;
     background-image: url(./images/bg-headline-ss.png);
     background-position: 102% 100%;
   }
 
-  section.headline h1 {
+  section#headline h1 {
     font-weight: normal;
     font-size: 56px;
     line-height: 64px;
@@ -240,7 +271,7 @@ section.headline .social-media li a i.fa-github {
     max-width: 310px;
   }
 
-  section.headline h2 {
+  section#headline h2 {
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -249,11 +280,11 @@ section.headline .social-media li a i.fa-github {
     text-align: left;
   }
 
-  section.headline p {
+  section#headline p {
     max-width: 300px;
   }
 
-  section.headline .social-media {
+  section#headline .social-media {
     position: relative;
     left: 0;
     flex-direction: row;
@@ -265,18 +296,18 @@ section.headline .social-media li a i.fa-github {
 }
 
 @media screen and (min-width: 576px) and (max-width: 991.99px) {
-  section.headline {
+  section#headline {
     padding: 120px 0 10px 24px;
     height: 590px;
     background-image: url(./images/bg-headline-ss.png);
     background-position: 102% 100%;
   }
 
-  section.headline h1 {
+  section#headline h1 {
     width: auto;
   }
 
-  section.headline .social-media {
+  section#headline .social-media {
     position: relative;
     left: 0;
     flex-direction: row;
@@ -288,11 +319,11 @@ section.headline .social-media li a i.fa-github {
 }
 
 /* Start Works */
-section.works {
+section#works {
   margin-top: 55px;
 }
 
-section.works h2 {
+section#works h2 {
   font-weight: normal;
   font-size: 40px;
   line-height: 52px;
@@ -302,7 +333,7 @@ section.works h2 {
   padding-left: 100px;
 }
 
-section.works h2::after {
+section#works h2::after {
   content: "";
   display: inline-block;
   margin: 0 0 7px 24px;
@@ -310,20 +341,20 @@ section.works h2::after {
   width: 760px;
 }
 
-section.works .featured-project {
+section#works .featured-project {
   margin-top: 45px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-section.works .featured-project div.image-container {
+section#works .featured-project div.image-container {
   margin: 10px auto 30px;
   width: 684px;
   height: 448px;
 }
 
-section.works .featured-project .content {
+section#works .featured-project .content {
   width: 448px;
   margin-left: 10px;
   display: flex;
@@ -331,7 +362,7 @@ section.works .featured-project .content {
   align-items: flex-start;
 }
 
-section.works .featured-project .content h3 {
+section#works .featured-project .content h3 {
   font-weight: normal;
   font-size: 40px;
   line-height: 44px;
@@ -339,7 +370,7 @@ section.works .featured-project .content h3 {
   margin: 0 0 12px 0;
 }
 
-section.works .featured-project .content p {
+section#works .featured-project .content p {
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
@@ -347,13 +378,13 @@ section.works .featured-project .content p {
   margin: 12px 0;
 }
 
-section.works .featured-project .content ul {
+section#works .featured-project .content ul {
   grid-template-columns: 60px 60px 95px 60px;
   justify-content: space-between;
   margin: 12px 0 22px;
 }
 
-section.works .featured-project .content ul li {
+section#works .featured-project .content ul li {
   text-align: center;
   border: 1px solid #8993a4;
   font-weight: 500;
@@ -364,7 +395,7 @@ section.works .featured-project .content ul li {
   padding: 10px 5px;
 }
 
-section.works .featured-project .content a {
+section#works .featured-project .content a {
   padding: 12px;
   background: #ff6b00;
   border: 1px solid #ff6b00;
@@ -377,12 +408,12 @@ section.works .featured-project .content a {
   transition: 0.4s;
 }
 
-section.works .featured-project .content a:hover {
+section#works .featured-project .content a:hover {
   background: #fff;
   color: #ff6b00;
 }
 
-section.works .cards {
+section#works .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -390,7 +421,7 @@ section.works .cards {
   padding-left: 25px;
 }
 
-section.works .cards .card {
+section#works .cards .card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -402,33 +433,33 @@ section.works .cards .card {
   transition: 1s;
 }
 
-section.works .cards .card:hover {
+section#works .cards .card:hover {
   transform: scale(1.1, 1.1);
   box-shadow: 0 0 7px 1px #8b0000bf;
 }
 
-section.works .cards .card:nth-child(1),
-section.works .cards .card:nth-child(4) {
+section#works .cards .card:nth-child(1),
+section#works .cards .card:nth-child(4) {
   background: url(./images/card.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-section.works .cards .card:nth-child(2),
-section.works .cards .card:nth-child(5) {
+section#works .cards .card:nth-child(2),
+section#works .cards .card:nth-child(5) {
   background-image: url(./images/card3.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-section.works .cards .card:nth-child(3),
-section.works .cards .card:nth-child(6) {
+section#works .cards .card:nth-child(3),
+section#works .cards .card:nth-child(6) {
   background-image: url(./images/card2.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-section.works .cards .card h3 {
+section#works .cards .card h3 {
   font-weight: normal;
   font-size: 32px;
   line-height: 44px;
@@ -436,7 +467,7 @@ section.works .cards .card h3 {
   margin: 0 0 0 12px;
 }
 
-section.works .cards .card p {
+section#works .cards .card p {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -444,13 +475,13 @@ section.works .cards .card p {
   margin: 12px;
 }
 
-section.works .cards .card ul {
+section#works .cards .card ul {
   grid-template-columns: 60px 100px 60px;
   text-align: center;
   margin: 0 12px;
 }
 
-section.works .cards .card ul li {
+section#works .cards .card ul li {
   background: rgba(255, 255, 255, 0.24);
   font-weight: 500;
   font-size: 15px;
@@ -460,7 +491,7 @@ section.works .cards .card ul li {
   margin-right: 10px;
 }
 
-section.works .cards .card a.inter-font {
+section#works .cards .card a.inter-font {
   position: absolute;
   left: 0;
   right: 0;
@@ -477,25 +508,25 @@ section.works .cards .card a.inter-font {
   transition: 0.4s;
 }
 
-section.works .cards .card a:hover {
+section#works .cards .card a:hover {
   background: #fff;
   color: #ff6b00;
 }
 
 @media screen and (max-width: 991.99px) {
-  section.works {
+  section#works {
     margin-top: 55px;
     grid-template-columns: 320px;
     justify-content: center;
   }
 
-  section.works h2 {
+  section#works h2 {
     display: flex;
     justify-content: center;
     padding-left: 0;
   }
 
-  section.works h2::after {
+  section#works h2::after {
     display: block;
     position: absolute;
     bottom: -16px;
@@ -503,57 +534,57 @@ section.works .cards .card a:hover {
     margin: 0;
   }
 
-  section.works .featured-project {
+  section#works .featured-project {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
   }
 
-  section.works .featured-project div.image-container {
+  section#works .featured-project div.image-container {
     margin: 0;
     width: 327px;
     height: 237px;
   }
 
-  section.works .featured-project .content {
+  section#works .featured-project .content {
     width: 327px;
   }
 
-  section.works .featured-project .content h3 {
+  section#works .featured-project .content h3 {
     font-size: 32px;
     margin: 12px 0;
   }
 
-  section.works .featured-project .content p {
+  section#works .featured-project .content p {
     font-size: 16px;
     line-height: 24px;
   }
 
-  section.works .cards {
+  section#works .cards {
     grid-template-columns: 320px;
     justify-content: center;
     padding: 0 5px;
   }
 
-  section.works .cards .card {
+  section#works .cards .card {
     background: url(images/card.png);
   }
 }
 
 @media screen and (min-width: 1199.99px) {
-  section.works .cards .card {
+  section#works .cards .card {
     width: 30%;
   }
 }
 
 /* Start About */
-section.about {
+section#about {
   background: rgba(28, 26, 25, 1);
   padding-bottom: 10px;
   margin-bottom: 120px;
 }
 
-section.about .description {
+section#about .description {
   position: relative;
   height: 650px;
   background: url(./images/about-bs.png);
@@ -562,7 +593,7 @@ section.about .description {
   margin-left: 150px;
 }
 
-section.about .description::after {
+section#about .description::after {
   content: "";
   display: block;
   position: absolute;
@@ -573,7 +604,7 @@ section.about .description::after {
   border: 1px solid #fff;
 }
 
-section.about .description h2 {
+section#about .description h2 {
   color: rgba(255, 107, 0, 1);
   font-size: 72px;
   font-weight: 400;
@@ -582,7 +613,7 @@ section.about .description h2 {
   padding: 140px 0 10px;
 }
 
-section.about .description p.descrip {
+section#about .description p.descrip {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -590,7 +621,7 @@ section.about .description p.descrip {
   width: 566px;
 }
 
-section.about .description a.resume {
+section#about .description a.resume {
   background: #ff6b00;
   border: 1px solid #ff6b00;
   font-weight: bold;
@@ -604,12 +635,12 @@ section.about .description a.resume {
   transition: 0.4s;
 }
 
-section.about .description a.resume:hover {
+section#about .description a.resume:hover {
   background: #fff;
   color: #ff6b00;
 }
 
-section.about .skills {
+section#about .skills {
   color: rgba(255, 255, 255, 1);
   text-align: center;
   display: flex;
@@ -617,14 +648,14 @@ section.about .skills {
   flex-wrap: wrap;
 }
 
-section.about .skills div {
+section#about .skills div {
   display: flex;
   flex-direction: column;
   margin: 90px 0;
   width: 228px;
 }
 
-section.about .skills h4 {
+section#about .skills h4 {
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -633,7 +664,7 @@ section.about .skills h4 {
   margin-top: 30px;
 }
 
-section.about .skills h4::before {
+section#about .skills h4::before {
   content: "";
   display: inline-block;
   width: 15px;
@@ -642,18 +673,18 @@ section.about .skills h4::before {
   margin-left: -30px;
 }
 
-section.about .skills h4:nth-child(1)::before {
+section#about .skills h4:nth-child(1)::before {
   transform: rotate(45deg);
   margin-right: 10px;
 }
 
-section.about .skills h4:nth-of-type(3)::before {
+section#about .skills h4:nth-of-type(3)::before {
   border-radius: 50%;
   width: 17px;
   height: 17px;
 }
 
-section.about .skills ul.items li {
+section#about .skills ul.items li {
   font-size: 22px;
   font-weight: 400;
   line-height: 43px;
@@ -662,7 +693,7 @@ section.about .skills ul.items li {
 }
 
 @media screen and (max-width: 991.99px) {
-  section.about .description {
+  section#about .description {
     position: relative;
     height: 650px;
     background: url(./images/about-ss.png);
@@ -671,32 +702,32 @@ section.about .skills ul.items li {
     margin-left: 24px;
   }
 
-  section.about .description::after {
+  section#about .description::after {
     width: 327px;
   }
 
-  section.about .description h2 {
+  section#about .description h2 {
     width: 327px;
   }
 
-  section.about .description p.descrip {
+  section#about .description p.descrip {
     width: 327px;
   }
 
-  section.about .skills div {
+  section#about .skills div {
     margin: 30px 0 20px 0;
   }
 }
 
 /* Start Contact Form  */
-section.form {
+section#contact-us {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 0 24px;
 }
 
-section.form h2.inter-font {
+section#contact-us h2.inter-font {
   font-size: 40px;
   font-weight: 700;
   line-height: 44px;
@@ -707,12 +738,12 @@ section.form h2.inter-font {
   width: 455px;
 }
 
-section.form form.contact-form div.form-control {
+section#contact-us form.contact-form div.form-control {
   margin: 10px 0;
   width: 450px;
 }
 
-section.form form.contact-form .form-control textarea {
+section#contact-us form.contact-form .form-control textarea {
   width: 100%;
   background-color: #fbf8f7;
   border: none;
@@ -720,7 +751,7 @@ section.form form.contact-form .form-control textarea {
   padding: 12px;
 }
 
-section.form form.contact-form .form-control textarea::placeholder {
+section#contact-us form.contact-form .form-control textarea::placeholder {
   font-size: 15px;
   line-height: 24px;
   color: rgba(60, 58, 57, 1);
@@ -765,24 +796,24 @@ section.form form.contact-form .form-control textarea::placeholder {
 }
 
 @media screen and (max-width: 991.99px) {
-  section.form {
+  section#contact-us {
     flex-direction: column;
     align-items: center;
   }
 
-  section.form h2.inter-font {
+  section#contact-us h2.inter-font {
     font-size: 32px;
     width: 327px;
   }
 
-  section.form form.contact-form {
+  section#contact-us form.contact-form {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  section.form form.contact-form div.form-control {
+  section#contact-us form.contact-form div.form-control {
     width: 100%;
   }
 }
