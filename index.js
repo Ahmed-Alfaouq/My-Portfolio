@@ -56,3 +56,48 @@ contactLink[0].addEventListener('click', () => {
     + portfolioSection.clientHeight
     + aboutSection.clientHeight));
 });
+
+// Start Pop up Modal
+const modalContainer = document.createElement('div');
+modalContainer.setAttribute('class', 'modal');
+// Title
+const modalTitle = document.createElement('h2');
+modalTitle.setAttribute('class', 'modal-title');
+modalTitle.textContent = 'Keeping track of hundreds  of components website';
+modalContainer.appendChild(modalTitle);
+// List
+const modalList = document.createElement('ul');
+const listItem1 = document.createElement('li');
+const listItem2 = document.createElement('li');
+const listItem3 = document.createElement('li');
+modalList.appendChild(listItem1);
+modalList.appendChild(listItem2);
+modalList.appendChild(listItem3);
+modalContainer.appendChild(modalList);
+// Image
+const imageContainer = document.createElement('div');
+imageContainer.setAttribute('class', 'img-container');
+const image = document.createElement('img');
+image.setAttribute('src', './images/modal.png');
+image.setAttribute('alt', 'modal image');
+imageContainer.appendChild(image);
+modalContainer.appendChild(imageContainer);
+// Content
+const contentContainer = document.createElement('div');
+contentContainer.setAttribute('class', 'content');
+const contentText = document.createElement('p');
+contentText.textContent = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
+it 1960s with the releax map lapora verita.`;
+contentContainer.appendChild(contentText);
+const liveBtn = document.createElement('button');
+liveBtn.textContent = 'See Live';
+contentContainer.appendChild(liveBtn);
+const sourceBtn = document.createElement('button');
+sourceBtn.textContent = 'See Source';
+contentContainer.appendChild(sourceBtn);
+modalContainer.appendChild(contentContainer);
+// Append Modal
+document.body.appendChild(modalContainer);
