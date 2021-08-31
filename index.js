@@ -1,5 +1,3 @@
-/* eslint linebreak-style: ["error", "windows"] */
-
 const menuIcon = document.getElementById('menu-icons');
 const menu = document.getElementById('collapse-menu');
 const closeIcon = document.getElementById('close-icon');
