@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 /* eslint linebreak-style: ["error", "windows"] */
 
 const menuIcon = document.getElementById('menu-icons');
@@ -43,7 +42,9 @@ aboutLink.addEventListener('click', () => {
   menuIcon.classList.remove('d-none');
   closeIcon.classList.add('d-none');
   logo[0].classList.remove('d-none');
-  window.scrollTo(0, (navbar.clientHeight + headlineSection.clientHeight + portfolioSection.clientHeight));
+  window.scrollTo(0, (navbar.clientHeight
+    + headlineSection.clientHeight
+    + portfolioSection.clientHeight));
 });
 
 contactLink[0].addEventListener('click', () => {

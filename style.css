@@ -91,6 +91,16 @@ header#navbar div#collapse-menu {
   width: 300px;
 }
 
+header#navbar div#collapse-menu ul.nav {
+  color: #fff;
+  justify-content: space-around;
+  font-size: 15px;
+}
+
+header#navbar div#collapse-menu ul.nav li.nav-item {
+  cursor: pointer;
+}
+
 header#navbar div#collapse-menu.open {
   display: flex;
   flex-direction: column;
@@ -98,7 +108,7 @@ header#navbar div#collapse-menu.open {
   margin-top: 20px;
 }
 
-header#navbar div#collapse-menu.open ul {
+header#navbar div#collapse-menu.open ul.nav {
   flex-direction: column;
   height: 200px;
   justify-content: space-around;
@@ -113,16 +123,6 @@ header#navbar div#collapse-menu.open .close-icon {
   cursor: pointer;
 }
 
-header#navbar div#collapse-menu ul {
-  color: #fff;
-  justify-content: space-around;
-  font-size: 15px;
-}
-
-header#navbar div#collapse-menu ul li {
-  cursor: pointer;
-}
-
 @media screen and (max-width: 991.99px) {
   header#navbar a.logo {
     font-size: 18px;
@@ -130,6 +130,25 @@ header#navbar div#collapse-menu ul li {
 
   header#navbar div#collapse-menu {
     display: none;
+  }
+
+  header#navbar div#collapse-menu ul.nav li.nav-item {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0;
+    border-bottom: 2px solid #6f6c6b;
+    padding-left: 15px;
+    width: 90%;
+    margin-bottom: 40px;
+  }
+
+  header#navbar div#collapse-menu ul.nav li:last-child {
+    display: none;
+  }
+
+  header#navbar nav#menu-icons span {
+    display: block;
   }
 
   header#navbar div#collapse-menu.open {
@@ -144,29 +163,10 @@ header#navbar div#collapse-menu ul li {
     background-color: #3c3a39;
     padding: 30px 0 0 0;
   }
-  
-  header#navbar div#collapse-menu.open ul {
+
+  header#navbar div#collapse-menu.open ul.nav {
     width: 100%;
     margin-top: 60px;
-  }
-
-  header#navbar div#collapse-menu ul li {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 44px;
-    letter-spacing: 0;
-    border-bottom: 2px solid #6f6c6b;
-    text-align: center;
-    width: 90%;
-    margin-bottom: 40px;
-  }
-
-  header#navbar div#collapse-menu ul li:last-child {
-    display: none;
-  }
-
-  header#navbar nav#menu-icons span {
-    display: block;
   }
 }
 
@@ -475,13 +475,13 @@ section#works .cards .card p {
   margin: 12px;
 }
 
-section#works .cards .card ul {
+section#works .cards .card ul.list {
   grid-template-columns: 60px 100px 60px;
   text-align: center;
   margin: 0 12px;
 }
 
-section#works .cards .card ul li {
+section#works .cards .card ul.list li {
   background: rgba(255, 255, 255, 0.24);
   font-weight: 500;
   font-size: 15px;
@@ -684,7 +684,7 @@ section#about .skills h4:nth-of-type(3)::before {
   height: 17px;
 }
 
-section#about .skills ul.items li {
+section#about .skills ul.items li.item {
   font-size: 22px;
   font-weight: 400;
   line-height: 43px;
@@ -819,30 +819,30 @@ section#contact-us form.contact-form .form-control textarea::placeholder {
 }
 
 /* Start Social Media */
-section.social-media {
+section#social-media {
   margin: 162px auto 40px;
   width: 25%;
 }
 
-section.social-media ul.social-media-list {
+section#social-media ul.social-media-list {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-section.social-media ul.social-media-list li i {
+section#social-media ul.social-media-list li.social-icon i {
   font-size: 20px;
   color: rgba(80, 95, 121, 1);
 }
 
-section.social-media ul.social-media-list li i.fa-github {
+section#social-media ul.social-media-list li.social-icon i.fa-github {
   background-color: rgba(80, 95, 121, 1);
   color: white;
   border-radius: 50%;
 }
 
 @media screen and (max-width: 575.99px) {
-  section.social-media::after {
+  section#social-media::after {
     content: "";
     display: block;
     background-color: #0d151e;
@@ -852,7 +852,7 @@ section.social-media ul.social-media-list li i.fa-github {
     margin: 23px auto;
   }
 
-  section.social-media {
+  section#social-media {
     margin: 162px auto 0;
     width: 60%;
   }
