@@ -950,6 +950,38 @@ section#social-media ul.social-media-list li.social-icon i.fa-github {
 .modal a.btn img {
   margin-left: 10px;
 }
+
+@media screen and (max-width: 991.99px) {
+  .modal {
+    max-height: 99%;
+    margin: auto;
+  }
+
+  .modal .modal-title-bs {
+    display: none;
+  }
+
+  .modal .modal-title-ss {
+    display: block;
+  }
+
+  .modal .img-container {
+    max-width: 99%;
+    height: 220px;
+  }
+
+  .modal .content {
+    width: 99%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .modal a.btn {
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+}
+
 /* End Modal */
 .d-none {
   opacity: 0;
