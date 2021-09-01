@@ -74,6 +74,16 @@ const modal = {
     src: './images/modal.png',
     alt: 'modal image',
   },
+  btns: {
+    liveBtn: {
+      text: 'See Live',
+      link: '#',
+    },
+    sourceBtn: {
+      text: 'See Source',
+      link: '#',
+    },
+  },
 };
 
 const modalContainer = document.createElement('div');
@@ -100,7 +110,7 @@ const listItem2 = document.createElement('li');
 const listItem3 = document.createElement('li');
 listItem1.className = 'modal-list-item';
 listItem2.className = 'modal-list-item';
-listItem2.className = 'modal-list-item';
+listItem3.className = 'modal-list-item';
 listItem1.textContent = modal.list[0];
 listItem2.textContent = modal.list[1];
 listItem3.textContent = modal.list[2];
@@ -129,9 +139,9 @@ const liveBtn = document.createElement('a');
 const liveIcon = document.createElement('img');
 liveIcon.src = './images/live-icon.png';
 liveIcon.alt = 'live icon';
-liveBtn.textContent = 'See Live';
+liveBtn.textContent = modal.btns.liveBtn.text;
 liveBtn.setAttribute('class', 'btn inter-font');
-liveBtn.setAttribute('href', '#');
+liveBtn.setAttribute('href', modal.btns.liveBtn.link);
 liveBtn.appendChild(liveIcon);
 contentContainer.appendChild(liveBtn);
 const sourceBtn = document.createElement('a');
@@ -139,9 +149,9 @@ const sourceIcon = document.createElement('img');
 sourceIcon.src = './images/source-icon.png';
 sourceIcon.alt = 'source icon';
 sourceBtn.setAttribute('class', 'btn inter-font');
-sourceBtn.innerHTML = 'See Source';
+sourceBtn.innerHTML = modal.btns.sourceBtn.text;
 sourceBtn.appendChild(sourceIcon);
-sourceBtn.setAttribute('href', '#');
+sourceBtn.setAttribute('href', modal.btns.sourceBtn.link);
 contentContainer.appendChild(sourceBtn);
 modalContainer.appendChild(contentContainer);
 // Append Modal
