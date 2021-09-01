@@ -40,10 +40,6 @@ a {
   display: flex;
 }
 
-.d-none {
-  display: none;
-}
-
 .justify-center {
   justify-content: center;
 }
@@ -405,7 +401,7 @@ section#works .featured-project .content ul li {
   padding: 10px 5px;
 }
 
-section#works .featured-project .content a {
+section#works .featured-project .content button {
   padding: 12px;
   background: #ff6b00;
   border: 1px solid #ff6b00;
@@ -415,10 +411,11 @@ section#works .featured-project .content a {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
+  cursor: pointer;
   transition: 0.4s;
 }
 
-section#works .featured-project .content a:hover {
+section#works .featured-project .content button:hover {
   background: #fff;
   color: #ff6b00;
 }
@@ -501,7 +498,7 @@ section#works .cards .card ul.list li {
   margin-right: 10px;
 }
 
-section#works .cards .card a.inter-font {
+section#works .cards .card button.inter-font {
   position: absolute;
   left: 0;
   right: 0;
@@ -515,10 +512,12 @@ section#works .cards .card a.inter-font {
   letter-spacing: 0.03em;
   color: #fff;
   padding: 12px;
+  width: 100%;
+  cursor: pointer;
   transition: 0.4s;
 }
 
-section#works .cards .card a:hover {
+section#works .cards .card button:hover {
   background: #fff;
   color: #ff6b00;
 }

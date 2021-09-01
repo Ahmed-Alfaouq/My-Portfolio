@@ -1,3 +1,4 @@
+/* eslint-disable prefer-destructuring */
 const menuIcon = document.getElementById('menu-icons');
 const menu = document.getElementById('collapse-menu');
 const closeIcon = document.getElementById('close-icon');
@@ -58,46 +59,94 @@ contactLink[0].addEventListener('click', () => {
 });
 
 // Start Pop up Modal
+const modal = {
+  title: 'Keeping track of hundreds  of components website',
+  list: [
+    'html',
+    'bootstrap',
+    'Ruby on rails',
+  ],
+  text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+  took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
+  it 1960s with the releax map lapora verita.`,
+  image: {
+    src: './images/modal.png',
+    alt: 'modal image',
+  },
+};
+
 const modalContainer = document.createElement('div');
-modalContainer.setAttribute('class', 'modal');
+modalContainer.setAttribute('class', 'modal d-none');
 // Title
 const modalTitle = document.createElement('h2');
-modalTitle.setAttribute('class', 'modal-title');
-modalTitle.textContent = 'Keeping track of hundreds  of components website';
+modalTitle.setAttribute('class', 'modal-title crete-font');
+modalTitle.textContent = modal.title;
 modalContainer.appendChild(modalTitle);
+// Close Icon
+const modalCloseIcon = document.createElement('i');
+modalCloseIcon.className = 'fas fa-times';
+modalContainer.appendChild(modalCloseIcon);
 // List
 const modalList = document.createElement('ul');
+modalList.setAttribute('class', 'list inter-font');
 const listItem1 = document.createElement('li');
 const listItem2 = document.createElement('li');
 const listItem3 = document.createElement('li');
+listItem1.textContent = modal.list[0];
+listItem2.textContent = modal.list[1];
+listItem3.textContent = modal.list[2];
 modalList.appendChild(listItem1);
 modalList.appendChild(listItem2);
 modalList.appendChild(listItem3);
 modalContainer.appendChild(modalList);
+
 // Image
 const imageContainer = document.createElement('div');
 imageContainer.setAttribute('class', 'img-container');
 const image = document.createElement('img');
-image.setAttribute('src', './images/modal.png');
-image.setAttribute('alt', 'modal image');
+image.setAttribute('src', modal.image.src);
+image.setAttribute('alt', modal.image.alt);
 imageContainer.appendChild(image);
 modalContainer.appendChild(imageContainer);
+
 // Content
 const contentContainer = document.createElement('div');
 contentContainer.setAttribute('class', 'content');
 const contentText = document.createElement('p');
-contentText.textContent = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
-took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
-it 1960s with the releax map lapora verita.`;
+contentText.setAttribute('class', 'inter-font');
+contentText.textContent = modal.text;
 contentContainer.appendChild(contentText);
-const liveBtn = document.createElement('button');
+const liveBtn = document.createElement('a');
+const liveIcon = document.createElement('img');
+liveIcon.src = './images/live-icon.png';
+liveIcon.alt = 'live icon';
 liveBtn.textContent = 'See Live';
+liveBtn.setAttribute('class', 'btn inter-font');
+liveBtn.setAttribute('href', '#');
+liveBtn.appendChild(liveIcon);
 contentContainer.appendChild(liveBtn);
-const sourceBtn = document.createElement('button');
-sourceBtn.textContent = 'See Source';
+const sourceBtn = document.createElement('a');
+const sourceIcon = document.createElement('img');
+sourceIcon.src = './images/source-icon.png';
+sourceIcon.alt = 'source icon';
+sourceBtn.setAttribute('class', 'btn inter-font');
+sourceBtn.innerHTML = 'See Source';
+sourceBtn.appendChild(sourceIcon);
+sourceBtn.setAttribute('href', '#');
 contentContainer.appendChild(sourceBtn);
 modalContainer.appendChild(contentContainer);
 // Append Modal
 document.body.appendChild(modalContainer);
+// Open Modal Function
+const seeProjectBtns = document.getElementsByClassName('see-project');
+for (let i = 0; i < seeProjectBtns.length; i += 1) {
+  seeProjectBtns[i].addEventListener('click', () => {
+    modalContainer.classList.remove('d-none');
+  });
+}
+// Close Modal Function
+modalCloseIcon.addEventListener('click', () => {
+  modalContainer.classList.add('d-none');
+});
