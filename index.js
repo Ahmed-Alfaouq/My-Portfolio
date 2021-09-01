@@ -58,7 +58,7 @@ contactLink[0].addEventListener('click', () => {
     + aboutSection.clientHeight));
 });
 
-// Start Pop up Modal
+/* Start Pop up Modal */
 const projects = [
   {
     title: 'Keeping track of hundreds  of components website',
@@ -168,4 +168,17 @@ for (let i = 0; i < seeProjectBtns.length; i += 1) {
 // Close Modal Function
 modalCloseIcon.addEventListener('click', () => {
   modalContainer.classList.add('d-none');
+});
+
+/* Start Form validation */
+const contactForm = document.forms[0];
+const error = document.getElementById('error');
+contactForm.addEventListener('submit', (e) => {
+  if (contactForm.elements.email.textContent
+    === contactForm.elements.email.textContent.toLowerCase()) {
+    error.classList.add('d-none');
+  } else {
+    e.preventDefault();
+    error.classList.remove('d-none');
+  }
 });
