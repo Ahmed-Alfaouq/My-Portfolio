@@ -59,39 +59,41 @@ contactLink[0].addEventListener('click', () => {
 });
 
 // Start Pop up Modal
-const modal = {
-  title: 'Keeping track of hundreds  of components website',
-  list: [
-    'html',
-    'bootstrap',
-    'Ruby on rails',
-  ],
-  text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-  when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-  image: {
-    src: './images/modal.png',
-    alt: 'modal image',
-  },
-  btns: {
-    liveBtn: {
-      text: 'See Live',
-      link: '#',
+const projects = [
+  {
+    title: 'Keeping track of hundreds  of components website',
+    list: [
+      'html',
+      'bootstrap',
+      'Ruby on rails',
+    ],
+    text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
+    image: {
+      src: './images/modal.png',
+      alt: 'modal image',
     },
-    sourceBtn: {
-      text: 'See Source',
-      link: '#',
+    btns: {
+      liveBtn: {
+        text: 'See Live',
+        link: '#',
+      },
+      sourceBtn: {
+        text: 'See Source',
+        link: '#',
+      },
     },
   },
-};
+];
 
 const modalContainer = document.createElement('div');
 modalContainer.setAttribute('class', 'modal d-none');
 // Title
 const modalTitleBs = document.createElement('h2');
 modalTitleBs.setAttribute('class', 'modal-title-bs crete-font');
-modalTitleBs.textContent = modal.title;
+modalTitleBs.textContent = projects[0].title;
 modalContainer.appendChild(modalTitleBs);
 
 const modalTitleSs = document.createElement('h2');
@@ -111,9 +113,9 @@ const listItem3 = document.createElement('li');
 listItem1.className = 'modal-list-item';
 listItem2.className = 'modal-list-item';
 listItem3.className = 'modal-list-item';
-listItem1.textContent = modal.list[0];
-listItem2.textContent = modal.list[1];
-listItem3.textContent = modal.list[2];
+listItem1.textContent = projects[0].list[0];
+listItem2.textContent = projects[0].list[1];
+listItem3.textContent = projects[0].list[2];
 modalList.appendChild(listItem1);
 modalList.appendChild(listItem2);
 modalList.appendChild(listItem3);
@@ -123,8 +125,8 @@ modalContainer.appendChild(modalList);
 const imageContainer = document.createElement('div');
 imageContainer.setAttribute('class', 'img-container');
 const image = document.createElement('img');
-image.setAttribute('src', modal.image.src);
-image.setAttribute('alt', modal.image.alt);
+image.setAttribute('src', projects[0].image.src);
+image.setAttribute('alt', projects[0].image.alt);
 imageContainer.appendChild(image);
 modalContainer.appendChild(imageContainer);
 
@@ -133,15 +135,15 @@ const contentContainer = document.createElement('div');
 contentContainer.setAttribute('class', 'modal-content');
 const contentText = document.createElement('p');
 contentText.setAttribute('class', 'inter-font description');
-contentText.textContent = modal.text;
+contentText.textContent = projects[0].text;
 contentContainer.appendChild(contentText);
 const liveBtn = document.createElement('a');
 const liveIcon = document.createElement('img');
 liveIcon.src = './images/live-icon.png';
 liveIcon.alt = 'live icon';
-liveBtn.textContent = modal.btns.liveBtn.text;
+liveBtn.textContent = projects[0].btns.liveBtn.text;
 liveBtn.setAttribute('class', 'btn inter-font');
-liveBtn.setAttribute('href', modal.btns.liveBtn.link);
+liveBtn.setAttribute('href', projects[0].btns.liveBtn.link);
 liveBtn.appendChild(liveIcon);
 contentContainer.appendChild(liveBtn);
 const sourceBtn = document.createElement('a');
@@ -149,9 +151,9 @@ const sourceIcon = document.createElement('img');
 sourceIcon.src = './images/source-icon.png';
 sourceIcon.alt = 'source icon';
 sourceBtn.setAttribute('class', 'btn inter-font');
-sourceBtn.innerHTML = modal.btns.sourceBtn.text;
+sourceBtn.innerHTML = projects[0].btns.sourceBtn.text;
 sourceBtn.appendChild(sourceIcon);
-sourceBtn.setAttribute('href', modal.btns.sourceBtn.link);
+sourceBtn.setAttribute('href', projects[0].btns.sourceBtn.link);
 contentContainer.appendChild(sourceBtn);
 modalContainer.appendChild(contentContainer);
 // Append Modal
