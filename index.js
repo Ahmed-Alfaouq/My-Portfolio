@@ -173,9 +173,10 @@ modalCloseIcon.addEventListener('click', () => {
 /* Start Form validation */
 const contactForm = document.forms[0];
 const error = document.getElementById('error');
+
 contactForm.addEventListener('submit', (e) => {
-  if (contactForm.elements.email.textContent
-    === contactForm.elements.email.textContent.toLowerCase()) {
+  if (contactForm.elements.email.value
+    === contactForm.elements.email.value.toLowerCase()) {
     error.classList.add('d-none');
   } else {
     e.preventDefault();
