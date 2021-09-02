@@ -752,6 +752,12 @@ section#contact-us form.contact-form div.form-control {
   width: 450px;
 }
 
+section#contact-us form.contact-form span#error {
+  font-size: 14px;
+  color: rgb(172, 1, 1);
+  margin: 5px 12px;
+}
+
 section#contact-us form.contact-form .form-control textarea {
   width: 100%;
   background-color: #fbf8f7;
