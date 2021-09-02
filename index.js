@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable prefer-destructuring */
 const menuIcon = document.getElementById('menu-icons');
 const menu = document.getElementById('collapse-menu');
@@ -173,9 +174,11 @@ modalCloseIcon.addEventListener('click', () => {
 /* Start Form validation */
 const contactForm = document.forms[0];
 const error = document.getElementById('error');
+
 contactForm.addEventListener('submit', (e) => {
-  if (contactForm.elements.email.textContent
-    === contactForm.elements.email.textContent.toLowerCase()) {
+  if (contactForm.elements.email.value
+    === contactForm.elements.email.value.toLowerCase()) {
+    e.preventDefault();
     error.classList.add('d-none');
   } else {
     e.preventDefault();
