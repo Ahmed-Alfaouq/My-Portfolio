@@ -208,4 +208,3 @@ window.addEventListener('load', () => {
   contactForm.elements.email.value = localStorage.getItem('email');
   contactForm.elements.message.value = localStorage.getItem('message');
 });
-
