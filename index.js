@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable prefer-destructuring */
 const menuIcon = document.getElementById('menu-icons');
 const menu = document.getElementById('collapse-menu');
@@ -58,7 +59,7 @@ contactLink[0].addEventListener('click', () => {
     + aboutSection.clientHeight));
 });
 
-// Start Pop up Modal
+/* Start Pop up Modal */
 const projects = [
   {
     title: 'Keeping track of hundreds  of components website',
@@ -168,4 +169,19 @@ for (let i = 0; i < seeProjectBtns.length; i += 1) {
 // Close Modal Function
 modalCloseIcon.addEventListener('click', () => {
   modalContainer.classList.add('d-none');
+});
+
+/* Start Form validation */
+const contactForm = document.forms[0];
+const error = document.getElementById('error');
+
+contactForm.addEventListener('submit', (e) => {
+  if (contactForm.elements.email.value
+    === contactForm.elements.email.value.toLowerCase()) {
+    e.preventDefault();
+    error.classList.add('d-none');
+  } else {
+    e.preventDefault();
+    error.classList.remove('d-none');
+  }
 });
