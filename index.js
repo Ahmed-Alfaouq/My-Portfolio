@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable prefer-destructuring */
 const menuIcon = document.getElementById('menu-icons');
 const menu = document.getElementById('collapse-menu');
