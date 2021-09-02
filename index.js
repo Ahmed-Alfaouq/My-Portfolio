@@ -193,15 +193,15 @@ const formContent = {
 
 contactForm.elements.name.addEventListener('input', (e) => {
   formContent.name = e.target.value;
-  localStorage.setItem('name', formContent.name);
+  localStorage.setItem('name', JSON.stringify(formContent.name));
 });
 contactForm.elements.email.addEventListener('input', (e) => {
   formContent.email = e.target.value;
-  localStorage.setItem('email', formContent.email);
+  localStorage.setItem('email', JSON.stringify(formContent.email));
 });
 contactForm.elements.message.addEventListener('input', (e) => {
   formContent.message = e.target.value;
-  localStorage.setItem('message', formContent.message);
+  localStorage.setItem('message', JSON.stringify(formContent.message));
 });
 
 window.addEventListener('load', () => {
