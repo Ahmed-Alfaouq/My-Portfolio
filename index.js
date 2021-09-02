@@ -182,3 +182,14 @@ contactForm.addEventListener('submit', (e) => {
     error.classList.remove('d-none');
   }
 });
+
+/* Start local Storage */
+contactForm.elements.name.addEventListener('input', (e) => {
+  localStorage.setItem('name', e.target.value);
+});
+contactForm.elements.email.addEventListener('input', (e) => {
+  localStorage.setItem('email', e.target.value);
+});
+contactForm.elements.message.addEventListener('input', (e) => {
+  localStorage.setItem('message', e.target.value);
+});
