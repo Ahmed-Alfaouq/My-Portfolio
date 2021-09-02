@@ -178,7 +178,6 @@ const error = document.getElementById('error');
 contactForm.addEventListener('submit', (e) => {
   if (contactForm.elements.email.value
     === contactForm.elements.email.value.toLowerCase()) {
-    e.preventDefault();
     error.classList.add('d-none');
   } else {
     e.preventDefault();
