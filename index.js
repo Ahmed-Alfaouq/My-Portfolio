@@ -184,3 +184,29 @@ contactForm.addEventListener('submit', (e) => {
     error.classList.remove('d-none');
   }
 });
+
+/* Start local Storage */
+const formContent = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+contactForm.elements.name.addEventListener('input', (e) => {
+  formContent.name = e.target.value;
+  localStorage.setItem('name', JSON.stringify(formContent.name));
+});
+contactForm.elements.email.addEventListener('input', (e) => {
+  formContent.email = e.target.value;
+  localStorage.setItem('email', JSON.stringify(formContent.email));
+});
+contactForm.elements.message.addEventListener('input', (e) => {
+  formContent.message = e.target.value;
+  localStorage.setItem('message', JSON.stringify(formContent.message));
+});
+
+window.addEventListener('load', () => {
+  contactForm.elements.name.value = localStorage.getItem('name');
+  contactForm.elements.email.value = localStorage.getItem('email');
+  contactForm.elements.message.value = localStorage.getItem('message');
+});
